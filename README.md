@@ -1,4 +1,5 @@
-# Capstone project Supervised Machine Learning Classification on HEALTH INSURANCE CROSS SELL PREDICTION
+# HEALTH INSURANCE CROSS SELL PREDICTION
+
 Our client is an Insurance company that has provided Health Insurance to its customers now they need your help in building a model to predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company.  
 
 An insurance policy is an arrangement by which a company undertakes to provide a guarantee of compensation for specified loss, damage, illness, or death in return for the payment of a specified premium. A premium is a sum of money that the customer needs to pay regularly to an insurance company for this guarantee. 
@@ -26,6 +27,8 @@ Dataset Information
 
 Problem Statement
 
+Approach
+
 Conclusion
 
 -----------------------------------------------------
@@ -48,7 +51,6 @@ We can also employ machine learning to improve Service and Customer retention, T
 
 Our major goal in this project is to identify Customers who are interested in purchasing vehcle insurance based on subscribed health insurance data of the company.
 
-dataset-cover
 
 -----------------------------------------------------
 
@@ -66,27 +68,35 @@ From that point forward, all that was left was to track down the important facto
 
 ### **📖 Dataset information:**
 
-id - A unique id for each customer.
+1. id: Unique ID for the customer
 
-Gender - Gender details of the health insurance owner.
+2. Gender: Gender of the customer
 
-Age - Age details of the health insurance owner.
+3. Age:  Age of the customer
 
-Driving_License - Whether the customer has a driving license or Not.
+4. Driving_License 0: Customer does not have DL, 1: Customer already has DL
 
-Region Code - Region with code details of the health insurance owner.
+5. Region_Code: Unique code for the region of the customer
 
-Previously_Insured -Whether the customer previously_Insured or Not.
+6. Previously_Insured: 1: Customer already has Vehicle Insurance, 0: Customer doesn't have Vehicle Insurance
 
-Vehicle_Age - Age of vehicle of the health insurance owner.
+7. Vehicle Age:  Age of the Vehicle
 
-Vehicle_Damage - Whether the customer Vehicle Damaged or Not.
+8. Vehicle_Damage :1: Customer got his/her vehicle damaged in the past. 0: Customer didn't get his/her vehicle damaged in the past.
 
-Annual Premium - Annual Premium amount details of a Customer.
+9. Annual_Premium: The amount customer needs to pay as premium in the year
 
-Policy_Sales_Channel - Policy Sales Channel shows us,the number of the sales channel.
+10. PolicySalesChannel:  Anonymized Code for the channel of outreaching to the customer ie. Different Agents, Over Mail, Over Phone, In Person, etc.
 
-Response - Response of the customer to buying vehicle insurance.
+11. Vintage: Number of Days, Customer has been associated with the company
+
+12. Response:  1: Customer is interested, 0: Customer is not interested
+
+
+Number of instances: 381109
+
+Number of attributes: 12
+
 
 -----------------------------------------------------
 
@@ -106,6 +116,23 @@ Integrating the factors affecting the purchase and insights from the data, will 
 
 -----------------------------------------------------
 
+### **📖Approach:**
+
+
+We will divide this project into three steps for reproductive analysis.
+
+As the first step we will be analyzing, cleaning the dataset which was provided and dropping some unnecessary column.
+
+In the second step we are handling outliers as well as finding the distribution type of all numerical features and try to understand the skew-ness of them.
+
+In the third step we will draw some insights after fetching all the details from all features like Age distribution, vehicle damage status and policy premium. After that we will do Feature selection and Engineering. In FE we will be using f_classification and correlation both method for Removing Some unnecessary column as well as we will do some encoding for categorical features also.
+
+In the Fourth step we will split our data into train and test set and due to unbalance nature of our data we will use some balancing techniques on train set and after that we prepare our data for feeding  to our models for training and analyze the results of all models by comparing with each other. We will select best model among these and proceed with them further.
+
+In the last step we will do hyper-parameter tuning for our topmost model and will see how our model behaves with different parameters. After getting best parameter for our top models we will go for feature importance method and draw the weightage of all features for our top model.
+
+Based on above steps we will find the best model which can be good enough for predicting Response of policyholders. By using these model we can increase our marketing conversion drastically and help to move forward towards cross-selling our vehicle insurance to our policyholders. In long term cross-selling can helps customers to feel satisfied, Build loyalty and Increase earning also because if cross-selling increases customer satisfaction, you’ll save money by spending less time and resources on customer acquisition.
+
 ### **📖 Conclusion:**
 
 Our main goal in this project was to determine different factors based on response, which we have done.
@@ -115,5 +142,17 @@ After fitting different models, we did hyperparameter tunig for better results.
 which we evaluated using the different evaluation metrics.
 
 Comparing the ROC curve we concluded that the Random Forest model performs better..
+
+#### **Key points:**
+
+1. Customers of age between 30 to 60 are more likely to buy insurance.
+
+2. Customers with Vehicle_Damage are likely to buy insurance.
+
+3. Customers with Driving License have higher chance of buying Insurance.
+
+4. The variable such as Age, Previously_insured,Annual_premium are more affecting the target variable.
+
+5. We can see that LGBM model preform better for this dataset.
 
 -----------------------------------------------------
