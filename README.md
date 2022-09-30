@@ -16,7 +16,7 @@ image
 
 -----------------------------------------------------
 
-# **💾 Table of Content**
+## **💾 Table of Content**
 
 Introduction
 
@@ -27,9 +27,10 @@ Dataset Information
 Problem Statement
 
 Conclusion
+
 -----------------------------------------------------
 
-## **📖 Introduction:**
+### **📖 Introduction:**
 
 Insurance is a contract, represented by a policy, in which an individual or entity receives financial protection or reimbursement against losses from an insurance company.
 
@@ -51,7 +52,7 @@ dataset-cover
 
 -----------------------------------------------------
 
-📖 Abstract:
+### **📖 Abstract:**
 
 The objective was to anticipate Customers who are interested in purchasing vehcle insurance.
 
@@ -63,7 +64,7 @@ From that point forward, all that was left was to track down the important facto
 
 -----------------------------------------------------
 
-📖 Dataset information:
+### **📖 Dataset information:**
 
 id - A unique id for each customer.
 
@@ -89,7 +90,7 @@ Response - Response of the customer to buying vehicle insurance.
 
 -----------------------------------------------------
 
-📖 Problem Statement:
+### **📖 Problem Statement:**
 
 This dataset consists information Subscribed Health insurance customers from insurance company.
 
@@ -105,7 +106,7 @@ Integrating the factors affecting the purchase and insights from the data, will 
 
 -----------------------------------------------------
 
-📖 Conclusion:
+### **📖 Conclusion:**
 
 Our main goal in this project was to determine different factors based on response, which we have done.
 
